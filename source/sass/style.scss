@@ -1,0 +1,45 @@
+$seafoam-blue: #63d1bb;
+$greeny-blue: #56c3b2;
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans.woff') format('woff');
+  src: url('../fonts/opensans.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensansbold.woff') format('woff');
+  src: url('../fonts/opensansbold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", Arial, sans-serif;
+}
+
+@import "visually-hidden.scss";
+@import "button";
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "site-list.scss";
+@import "page-main.scss";
+@import "site-sections.scss";
+@import "best-product.scss";
+@import "about.scss";
+@import "reviews.scss";
+@import "contacts.scss";
+@import "page-footer.scss";
+@import "social.scss";
+@import "copyright.scss";
+@import "modal-order.scss";
+@import "catalog.scss";
+@import "production.scss";
+@import "order-form.scss";
+@import "form-item.scss";
+@import "modal-form.scss";
