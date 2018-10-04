@@ -44,12 +44,12 @@
           <fieldset class="order-form__item form-item">
             <legend class="form-item__legend">Тип</legend>
             <ul class="form-item__list">
-              <li class="form-item__item">
+              <li class="form-item__item form-item__item--toggle">
                 <input class="visually-hidden form-item__input form-item__input--radio" type="radio" name="type" value="interior-accessory"
                 id="filter-interior-accessory" checked>
                 <label class="form-item__label" for="filter-interior-accessory">Аксессуар для интерьера</label>
               </li>
-              <li class="form-item__item">
+              <li class="form-item__item form-item__item--toggle">
                 <input class="visually-hidden form-item__input form-item__input--radio" type="radio" name="type" value="toy" id="filter-toy">
                 <label class="form-item__label" for="filter-toy">Детская игрушка</label>
               </li>
@@ -59,27 +59,27 @@
           <fieldset class="order-form__item form-item">
             <legend class="form-item__legend">Цвет</legend>
             <ul class="form-item__list">
-              <li class="form-item__item">
+              <li class="form-item__item form-item__item--toggle">
                 <input class="visually-hidden form-item__input form-item__input--checkbox" type="checkbox" name="white" id="filter-white" checked>
                 <label class="form-item__label" for="filter-white">Белый</label>
               </li>
-              <li class="form-item__item">
+              <li class="form-item__item form-item__item--toggle">
                 <input class="visually-hidden form-item__input form-item__input--checkbox" type="checkbox" name="grey" id="filter-grey" checked>
                 <label class="form-item__label" for="filter-grey">Серый</label>
               </li>
-              <li class="form-item__item">
+              <li class="form-item__item form-item__item--toggle">
                 <input class="visually-hidden form-item__input form-item__input--checkbox" type="checkbox" name="tiffany" id="filter-tiffany">
                 <label class="form-item__label" for="filter-tiffany">«Тиффани»</label>
               </li>
-              <li class="form-item__item">
+              <li class="form-item__item form-item__item--toggle">
                 <input class="visually-hidden form-item__input form-item__input--checkbox" type="checkbox" name="black" id="filter-black">
                 <label class="form-item__label" for="filter-black">Черный</label>
               </li>
-              <li class="form-item__item">
+              <li class="form-item__item form-item__item--toggle">
                 <input class="visually-hidden form-item__input form-item__input--checkbox" type="checkbox" name="pink" id="filter-pink">
                 <label class="form-item__label" for="filter-pink">Розовый</label>
               </li>
-              <li class="form-item__item">
+              <li class="form-item__item form-item__item--toggle">
                 <input class="visually-hidden form-item__input form-item__input--checkbox" type="checkbox" name="orange" id="filter-orange">
                 <label class="form-item__label" for="filter-orange">Оранжевый</label>
               </li>
@@ -108,20 +108,20 @@
           </fieldset>
 
           <fieldset class="order-form__item form-item">
-            <legend class="form-item__legend">Тел</legend>
+            <legend class="form-item__legend form-item__legend--phone">Тел</legend>
             <input class="form-item__input form-item__input--phone-number" type="tel" pattern="\+7\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}"
               name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone-number" required>
             <label class="visually-hidden" for="phone-number">Введите номер телефона</label>
           </fieldset>
 
           <fieldset class="order-form__item form-item">
-            <legend class="form-item__legend">E-mail</legend>
+            <legend class="form-item__legend form-item__legend--email">E-mail</legend>
             <input class="form-item__input form-item__input--email" type="email" name="email" placeholder="Ваш Email*" id="email" required>
             <label class="visually-hidden" for="email">Введите номер телефона</label>
           </fieldset>
 
           <fieldset class="order-form__item form-item">
-            <legend class="form-item__legend">Доп</legend>
+            <legend class="form-item__legend form-item__legend--textarea">Доп</legend>
             <textarea class="form-item__input form-item__input--textarea" name="requests" id="requests">Опишите все ваши пожелания к заказу</textarea>
             <label class="visually-hidden" for="requests">Ваши пожелания к заказу</label>
           </fieldset>

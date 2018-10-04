@@ -1,4 +1,6 @@
 .form-item {
+  margin: 0;
+  padding: 0;
   border: none;
   font-size: 17px;
   line-height: 18px;
@@ -7,11 +9,21 @@
 }
 
 .form-item__legend {
+  padding-bottom: 35px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
   color: $seafoam-blue;
   text-transform: uppercase;
+}
+
+.form-item__legend--phone,
+.form-item__legend--email {
+  padding-bottom: 9px;
+}
+
+.form-item__legend--textarea {
+  padding-bottom: 23px;
 }
 
 .form-item__list {
@@ -24,8 +36,21 @@
 
 }
 
-.form-item__input {
+.form-item__item--toggle {
+  padding-left: 62px;
+  padding-bottom: 24px;
+}
 
+.form-item__input {
+  margin-bottom: 30px;
+  width: 260px;
+  height: 52px;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+  border: none;
+  box-shadow: inset 0px -2px 0 0 #000000;
 }
 
 .form-item__input--radio {
@@ -36,6 +61,22 @@
 
 }
 
+.form-item__input--textarea {
+  margin-bottom: 0;
+  padding: 18px;
+  height: 142px;
+  border: solid 2px #444444;
+  box-shadow: none;
+}
+
 .form-item__label {
+
+}
+
+.form-item__label--radio {
+
+}
+
+.form-item__label--checkbox {
 
 }
