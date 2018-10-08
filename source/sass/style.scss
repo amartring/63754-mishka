@@ -1,5 +1,5 @@
-$seafoam-blue: #63d1bb;
-$greeny-blue: #56c3b2;
+@import "variables.scss";
+@import "mixins.scss";
 
 @font-face {
   font-family: "OpenSans";
@@ -17,14 +17,10 @@ $greeny-blue: #56c3b2;
   font-style: normal;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "OpenSans", "Arial", sans-serif;
-}
-
+@import "scaffolding.scss";
 @import "visually-hidden.scss";
 @import "button";
+
 @import "page-header.scss";
 @import "main-nav.scss";
 @import "site-list.scss";

@@ -1,22 +1,109 @@
-.site-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+
 
 .site-list__item {
-  box-sizing: border-box;
-  padding-left: 76px;
-  padding-right: 50px;
-  padding-top: 28px;
-  padding-bottom: 27px;
-  min-height: 79px;
-  box-shadow:
-    0 1px 0 0 #ececec,
-    inset 0 1px 0 0 #ececec;
+
+
+    &--logo {
+      padding-left: 115px;
+      padding-top: 22px;
+      padding-bottom: 16px;
+    }
+
+    &--new-product {
+      display: none;
+    }
+
+    &--sale {
+      display: none;
+    }
+
+    &--delivery {
+      display: none;
+    }
 }
 
-.site-list__link {
-  color: #000000;
-  text-decoration: none;
+
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    width: 167px;
+    min-height: 88px;
+    box-sizing: border-box;
+    box-shadow: none;
+
+    &--logo {
+      flex-grow: 1;
+      padding-left: 50px;
+      padding-right: 200px;
+      border-bottom: 1px #ececec solid;
+    }
+
+    &--catalog {
+      order: 1;
+      padding-left: 50px;
+      padding-right: 30px;
+      border-bottom: none;
+    }
+
+    &--order {
+      order: 2;
+      padding-left: 0;
+      padding-right: 30px;
+    }
+
+    &--search {
+      width: 82px;
+      border-left: 1px #ececec solid;
+      border-bottom: 1px #ececec solid;
+    }
+
+    &--cart {
+      padding: 0;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-right: 50px;
+      width: 264px;
+      text-align: right;
+      border-left: 1px #ececec solid;
+      border-bottom: 1px #ececec solid;
+    }
+
+    &--delivery {
+      display: inline-block;
+      flex-grow: 1;
+      order: 3;
+      text-align: right;
+    }
+
+    .site-list__search-text {
+      display: none;
+    }
+  }
+
+  // .site-list__search-text {
+  //   display: none;
+  // }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  // .site-list__search-text {
+  //   display: none;
+  // }
+
+  .site-list__item {
+    &--new-product {
+      display: inline-block;
+    }
+
+    &--sale {
+      display: inline-block;
+    }
+  }
 }

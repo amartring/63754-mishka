@@ -8,33 +8,47 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35"
-        alt="Логотип Mishka">
-      </a>
       <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        <ul class="main-nav__list main-nav__list--site-sections">
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item site-list__item--search">
-            <a class="site-list__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item site-list__item--cart">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__item main-nav__item--order">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link" href="#"><span class="main-nav__search-text">Поиск по сайту</span></a>
+          </li>
+          <li class="main-nav__item main-nav__item--cart">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--site-info">
+          <li class="main-nav__item main-nav__item--new-product">
+            <a class="main-nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--sale">
+            <a class="main-nav__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <div class="main-nav__list main-nav__list--delivery">
+          <a class="main-nav__link" href="#">Бесплатная доставка по России</a>
+        </div>
       </nav>
     </header>
 
   <main class="page-main">
-    <div class="page-main__container page-main__container--catalog">
-      <h1 class="page-main__title">Каталог товаров</h1>
-    </div>
+    <section class="site-sections">
+      <div class="site-sections__container site-sections__container--catalog">
+        <h1 class="site-sections__title">Каталог товаров</h1>
+      </div>
+    </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Товары</h2>
@@ -89,6 +103,9 @@
   <footer class="page-footer">
     <section class="page-footer__social social">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <a class="social__logo" href="index.html">
+        <img class="social__logo-image" src="img/logo-mobile.svg" width="102" height="34" alt="Логотип Mishka">
+      </a>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
@@ -106,14 +123,13 @@
           </a>
         </li>
       </ul>
-    </section>
-
-    <section class="page-footer__copyright copyright">
-      <h2 class="visually-hidden">Авторские права</h2>
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
-      </a>
+      <div class="page-footer__copyright copyright">
+        <h2 class="visually-hidden">Авторские права</h2>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
     </section>
   </footer>
 

@@ -1,12 +1,24 @@
 .page-header {
   margin: 0 auto;
+  position: relative;
   width: 320px;
   min-height: 79px;
-  box-shadow:
-    0 1px 0 0 #ececec,
-    inset 0 1px 0 0 #ececec;
+  box-shadow: 0 1px 0 0 #ececec;
 }
 
-.page-header__logo-image {
-  margin: 22px 116px;
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    width: 768px;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    width: 1250px;
+  }
 }
