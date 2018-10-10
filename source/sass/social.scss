@@ -1,7 +1,7 @@
 .social__list {
+  @include no-list;
   display: flex;
   margin-bottom: 25px;
-  @include no-list;
 }
 
 .social__link {
