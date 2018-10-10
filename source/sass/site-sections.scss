@@ -93,10 +93,12 @@
     width: 768px;
     box-sizing: border-box;
     max-width: 768px;
+
     &--index {
       min-height: 746px;
       background-image: url("../img/hero-tablet@1x.jpg");
     }
+
     &--catalog,
     &--form {
       min-height: 226px;
@@ -113,7 +115,7 @@
 
   .site-sections__list {
     margin-top: auto;
-      display: flex;
+    display: flex;
   }
 
   .site-sections__item {
@@ -135,6 +137,7 @@
     box-sizing: border-box;
     max-width: 1190px;
     border-top: 1px solid #ececec;
+
     &--index {
       background-image: url("../img/hero-desktop@1x.jpg");
     }
@@ -151,5 +154,4 @@
     width: 525px;
     min-height: 119px;
   }
-
 }
