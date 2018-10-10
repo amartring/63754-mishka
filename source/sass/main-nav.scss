@@ -51,9 +51,9 @@
   }
 
   .main-nav__logo {
+    margin: 0;
     margin-top: 22px;
     margin-bottom: 24px;
-    margin-left: 50px;
     flex-grow: 1;
   }
 
@@ -61,13 +61,11 @@
     &--site-sections {
       display: flex;
       order: 1;
-      padding-left: 50px;
       font-size: 15px;
       line-height: 24px;
     }
     &--user {
       display: flex;
-      padding-right: 50px;
     }
     &--delivery {
       display: inline-block;
@@ -114,7 +112,7 @@
   .main-nav__logo {
     margin-top: 9px;
     margin-bottom: 7px;
-    margin-right: 101px;
+    margin-right: 20px;
     flex-grow: 1;
     order: 1;
   }

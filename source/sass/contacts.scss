@@ -7,7 +7,7 @@
   width: 320px;
   color: #444444;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 319px 6px;
+  background-size: 320px 6px;
   background-repeat: no-repeat;
   background-position: top 0 left 0;
 }
@@ -28,7 +28,7 @@
   padding-bottom: 35px;
 }
 
-.contacts__info {
+.contacts__list {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 35px;
@@ -80,13 +80,15 @@
     line-height: 50px;
   }
 
-  .contacts__info {
-    display: flex;
-    justify-content: space-between;
+  .contacts__list {
     padding-left: 50px;
     padding-right: 90px;
     padding-bottom: 55px;
     font-size: 17px;
+    tbody {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .contacts__image-map {
@@ -107,16 +109,16 @@
   .contacts {
     padding-top: 150px;
     padding-bottom: 105px;
-    padding-left: 275px;
-    padding-right: 100px;
-    width: 1250px;
-    background-size: 1052px 23px;
+    padding-left: 225px;
+    padding-right: 50px;
+    width: 1150px;
+    background-size: 1150px 23px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 156px;
-      left: 163px;
+      top: 135px;
+      left: 113px;
       width: 47px;
       height: 81px;
       background-image: url("../img/icon-flag.svg");
@@ -132,12 +134,16 @@
     max-width: 270px;
   }
 
-  .contacts__info {
+  .contacts__list {
     display: block;
     padding-left: 0;
     padding-right: 10px;
     padding-bottom: 110px;
     max-width: 320px;
+
+    tbody {
+      display: table;
+    }
   }
 
   .contacts__wrapper {

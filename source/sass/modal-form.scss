@@ -59,3 +59,18 @@
     color: rgba(255, 255, 255, 0.3);
   }
 }
+
+@media (min-width: $tablet-width)  {
+  .modal-form__text {
+    font-size: 17px;
+  }
+
+  .modal-form__item {
+    width: 112px;
+  }
+
+  .modal-form__button {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}

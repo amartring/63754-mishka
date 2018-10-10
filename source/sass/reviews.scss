@@ -102,10 +102,10 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 160px;
-    width: 1250px;
+    width: 1150px;
     background-position: 100px 0;
   }
 
@@ -128,6 +128,6 @@
 
   .reviews__button {
     top: 79px;
-    right: 100px;
+    right: 50px;
   }
 }

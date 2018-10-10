@@ -1,14 +1,35 @@
 .modal-order {
+  padding-top: 35px;
+  padding-bottom: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
   width: 320px;
+  box-sizing: border-box;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   border: 1px solid #c6c6c6;
   text-align: center;
 }
 
 .modal-order__title {
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 50px;
+  padding-right: 50px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: $tablet-width)  {
+  .modal-order {
+    width: 566px;
+  }
+
+  .modal-order__title {
+    font-size: 30px;
+    line-height: 57px;
+    max-width: auto;
+  }
 }

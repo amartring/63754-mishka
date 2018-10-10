@@ -1,25 +1,20 @@
 .page-main {
   margin: 0 auto;
   width: 320px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
     margin-top: -78px;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-sizing: border-box;
-    width: 100%;
+    width: 768px;
+    border-top: 1px solid #ececec;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main {
-    margin-top: -78px;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-sizing: border-box;
-    width: 100%;
+    width: 1150px;
     border: none;
   }
 }

@@ -2,20 +2,16 @@
   margin: 0 auto;
   margin-bottom: 27px;
   width: 320px;
-}
-
-.site-sections__container {
-  margin-top: -78px;
-  padding-top: 71px;
+  padding-top: 90px;
   box-sizing: border-box;
   max-width: 320px;
 
   &--index {
-    min-height: 283px;
+    min-height: 490px;
     background-color: #f9f9f9;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    // background-position: center;
+    background-position-x: center;
   }
 
   &--catalog,
@@ -50,7 +46,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 29px;
-  padding-right: 189px;
+  padding-right: 120px;
   text-align: left;
   width: 320px;
   min-height: 103px;
@@ -69,6 +65,8 @@
 }
 
 .site-sections__link {
+  display: block;
+  max-width: 120px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -86,19 +84,17 @@
 
 @media (min-width: $tablet-width) {
   .site-sections {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 50px;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 768px;
-  }
-
-  .site-sections__container {
-    padding-top: 155px;
-    padding-left: 52px;
-    padding-right: 52px;
     box-sizing: border-box;
     max-width: 768px;
-    border-top: 1px solid #ececec;
     &--index {
-      min-height: 627px;
+      min-height: 746px;
       background-image: url("../img/hero-tablet@1x.jpg");
     }
     &--catalog,
@@ -109,13 +105,14 @@
   }
 
   .site-sections__title {
-    padding-bottom: 359px;
+    padding-bottom: 63px;
     max-width: 500px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .site-sections__list {
+    margin-top: auto;
       display: flex;
   }
 
@@ -131,9 +128,7 @@
 @media (min-width: $desktop-width) {
   .site-sections {
     margin-bottom: 71px;
-    width: 1250px;
-  }
-  .site-sections__container {
+    width: 1150px;
     padding-top: 158px;
     padding-left: 109px;
     padding-right: 109px;
@@ -141,7 +136,6 @@
     max-width: 1190px;
     border-top: 1px solid #ececec;
     &--index {
-      min-height: 570px;
       background-image: url("../img/hero-desktop@1x.jpg");
     }
   }
@@ -154,7 +148,6 @@
 
   .site-sections__item {
     display: inline-block;
-    padding-right: 370px;
     width: 525px;
     min-height: 119px;
   }
