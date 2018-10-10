@@ -1,21 +1,21 @@
 .site-list__item {
-    &--logo {
-      padding-left: 115px;
-      padding-top: 22px;
-      padding-bottom: 16px;
-    }
+  &--logo {
+    padding-left: 115px;
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
 
-    &--new-product {
-      display: none;
-    }
+  &--new-product {
+    display: none;
+  }
 
-    &--sale {
-      display: none;
-    }
+  &--sale {
+    display: none;
+  }
 
-    &--delivery {
-      display: none;
-    }
+  &--delivery {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

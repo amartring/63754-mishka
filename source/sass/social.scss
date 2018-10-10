@@ -14,15 +14,11 @@
 
 @media (min-width: $tablet-width) {
   .social {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 
   .social__logo {
     display: block;
   }
-}
-
-@media (min-width: $desktop-width) {
-
 }
