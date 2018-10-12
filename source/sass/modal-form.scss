@@ -9,10 +9,8 @@
 }
 
 .modal-form__list {
-  margin: 0;
+  @include no-list;
   margin-bottom: 31px;
-  padding: 0;
-  list-style: none;
 }
 
 .modal-form__item {
@@ -59,5 +57,20 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal-form__text {
+    font-size: 17px;
+  }
+
+  .modal-form__item {
+    width: 112px;
+  }
+
+  .modal-form__button {
+    padding-left: 125px;
+    padding-right: 125px;
   }
 }

@@ -8,47 +8,151 @@
 }
 
 .catalog__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include no-list;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 1px #ececec;
 }
 
 .catalog__link {
+  display: block;
   margin: 0;
   padding: 0;
   text-decoration: none;
   color: #000000;
 }
 
-.catalog__description {
-  margin-bottom: 30px;
-  box-sizing: border-box;
-  border: 1px solid #ececec;
+.catalog__wrapper {
+  padding: 25px;
+}
+
+.catalog__info-wrapper {
+  padding-bottom: 25px;
 }
 
 .catalog__title {
   margin: 0;
-  padding-top: 25px;
-  padding-right: 28px;
-  padding-left: 28px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
 }
 
 .catalog__characteristic {
-  padding-right: 28px;
-  padding-left: 28px;
+  margin: 0;
+  padding: 0;
   font-size: 13px;
   line-height: 30px;
   color: #444444;
 }
 
+.catalog__order-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 23px;
+  border-top: 1px solid #ececec;
+}
+
 .catalog__price {
-  padding-right: 28px;
-  padding-left: 28px;
+  margin: 0;
+  padding: 0;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
   color: #000000;
+}
+
+.catalog__button {
+  width: 20px;
+  height: 19px;
+
+  path {
+    fill: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 53px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 768px;
+  }
+
+  .catalog__item {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
+  .catalog__image {
+    min-width: 334px;
+    height: 339px;
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 32px;
+    flex-grow: 1;
+  }
+
+  .catalog__title {
+    font-size: 20px;
+  }
+
+  .catalog__characteristic {
+    font-size: 15px;
+  }
+
+  .catalog__order-wrapper {
+    margin-top: auto;
+  }
+
+  .catalog__price {
+    font-size: 17px;
+  }
+
+  .catalog__button {
+    min-width: 21px;
+    height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    margin-bottom: 37px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 1150px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .catalog__item {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    max-width: 316px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .catalog__image {
+    min-width: 316px;
+    height: 462px;
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 32px;
+  }
 }

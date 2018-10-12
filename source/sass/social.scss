@@ -1,9 +1,24 @@
 .social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include no-list;
+  display: flex;
+  margin-bottom: 25px;
 }
 
 .social__link {
   text-decoration: none;
+}
+
+.social__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social__logo {
+    display: block;
+  }
 }

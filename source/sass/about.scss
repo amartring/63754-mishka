@@ -1,6 +1,6 @@
 .about {
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 31px;
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
@@ -11,21 +11,68 @@
 
 .about__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0;
   font-size: 25px;
   line-height: 30px;
 }
 
 .about__list {
-  margin: 0;
-  padding: 0;
+  @include no-list;
   font-size: 17px;
   line-height: 20px;
-  list-style: none;
 }
 
 .about__item {
   padding-top: 60px;
+  padding-bottom: 23px;
   max-width: 250px;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    margin-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 768px;
+  }
+
+  .about__title {
+    margin-bottom: 42px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__wrapper {
+    display: flex;
+  }
+
+  .about__list {
+    font-size: 20px;
+    line-height: 22px;
+
+    &:first-child {
+      margin-right: 100px;
+    }
+  }
+
+  .about__item {
+    padding-top: 60px;
+    padding-bottom: 23px;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    margin-bottom: 88px;
+    padding-left: 275px;
+    padding-right: 275px;
+    width: 1150px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

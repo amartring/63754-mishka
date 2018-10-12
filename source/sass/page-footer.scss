@@ -1,5 +1,22 @@
 .page-footer {
   margin: 0 auto;
+  padding: 25px 30px;
   width: 320px;
+  box-sizing: border-box;
   background-color: #f1f1f1;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 768px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1150px;
+  }
 }

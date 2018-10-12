@@ -1,5 +1,6 @@
 .order-form {
   margin: 0 auto;
+  margin-bottom: 55px;
   padding-left: 30px;
   padding-right: 30px;
   width: 320px;
@@ -7,21 +8,44 @@
 }
 
 .order-form__text {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-top: 15px;
+  font-size: 13px;
+  line-height: 24px;
   color: #444444;
 }
 
-.order-form__text--top {
-  font-size: 13px;
-  line-height: 24px;
+@media (min-width: $tablet-width) {
+  .order-form {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 768px;
+  }
+
+  .order-form__text {
+    margin-bottom: 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form-item__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.order-form__text--bottom {
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 16px;
-}
+@media (min-width: $desktop-width) {
+  .order-form {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 1150px;
+  }
 
-.order-form__button {
-  padding-left: 45px;
-  padding-right: 45px;
+  .order-form__text {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 }
