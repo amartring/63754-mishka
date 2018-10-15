@@ -31,14 +31,15 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    margin-bottom: 80px;
+    margin-bottom: 51px;
     padding-left: 50px;
     padding-right: 50px;
     width: 768px;
   }
 
   .about__title {
-    margin-bottom: 42px;
+    margin-bottom: 25px;
+    margin-left: -5px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -57,22 +58,28 @@
   }
 
   .about__item {
-    padding-top: 60px;
-    padding-bottom: 23px;
-    max-width: 300px;
+    padding-top: 79px;
+    padding-bottom: 32px;
+    max-width: 295px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
-    margin-bottom: 88px;
-    padding-left: 275px;
-    padding-right: 275px;
+    margin-bottom: 57px;
+    padding-left: 225px;
+    padding-right: 225px;
     width: 1150px;
   }
 
   .about__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about__list {
+    &:first-child {
+      margin-right: 116px;
+    }
   }
 }

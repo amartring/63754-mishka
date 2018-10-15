@@ -2,18 +2,20 @@
   margin: 0 auto;
   position: relative;
   width: 320px;
-  min-height: 79px;
+  // min-height: 79px;
   box-shadow: 0 1px 0 0 #ececec;
   box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    display: flex;
+    // display: flex;
+    // margin-bottom: -87px;
     padding-left: 50px;
     padding-right: 50px;
     width: 768px;
     box-shadow: none;
+    z-index: 2;
   }
 }
 

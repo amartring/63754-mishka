@@ -9,11 +9,11 @@
   <body>
 
     <header class="page-header">
-      <nav class="main-nav">
-        <a class="main-nav__logo" href="index.html">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <a class="main-nav__logo"  href="index.html">
           <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list main-nav__list--site-sections">
           <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -46,7 +46,9 @@
 
     <main class="page-main">
       <section class="site-sections site-sections--form">
-        <h1 class="site-sections__title">Вязание на заказ</h1>
+        <div class="site-sections__wrapper site-sections__wrapper--form">
+          <h1 class="site-sections__title">Вязание на заказ</h1>
+        </div>
       </section>
 
       <section class="order-form">
@@ -178,6 +180,6 @@
         </div>
       </section>
     </footer>
-
+    <script src="js/script.js"></script>
   </body>
 </html>
