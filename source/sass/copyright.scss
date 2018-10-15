@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
+  padding-top: 3px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -12,4 +12,18 @@
   line-height: 18px;
   font-weight: bold;
   color: #000000;
+}
+
+.copyright__link img {
+  width: 27px;
+  height: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
 }
