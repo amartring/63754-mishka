@@ -8,12 +8,12 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <nav class="main-nav">
+    <header class="page-header page-header--catalog">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <a class="main-nav__logo" href="index.html">
           <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list main-nav__list--site-sections">
           <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -46,7 +46,9 @@
 
   <main class="page-main">
     <section class="site-sections site-sections--catalog">
-      <h1 class="site-sections__title">Каталог товаров</h1>
+      <div class="site-sections__wrapper site-sections__wrapper--catalog">
+        <h1 class="site-sections__title">Каталог товаров</h1>
+      </div>
     </section>
 
     <section class="catalog">
@@ -159,26 +161,26 @@
   </footer>
 
   <section class="modal-order">
-    <h2 class="modal-order__title">Добавить<br> в корзину</h2>
+    <h2 class="modal-order__title">Добавить в корзину</h2>
     <form class="modal-order__form modal-form" method="post" action="https://echo.htmlacademy.ru">
+      <input class="visually-hidden modal-form__size-S" type="radio" id="s-size" name="size" checked>
+      <input class="visually-hidden modal-form__size-M" type="radio" id="m-size" name="size">
+      <input class="visually-hidden modal-form__size-L" type="radio" id="l-size" name="size">
       <p class="modal-form__text">Выберите размер:</p>
       <ul class="modal-form__list">
         <li class="modal-form__item">
-          <input class="visually-hidden modal-form__input" type="radio" name="size" value="S" id="s-size" checked>
           <label for="s-size">S</label>
         </li>
         <li class="modal-form__item">
-          <input class="visually-hidden modal-form__input" type="radio" name="size" value="M" id="m-size">
           <label for="m-size">M</label>
         </li>
         <li class="modal-form__item">
-          <input class="visually-hidden modal-form__input" type="radio" name="size" value="L" id="l-size">
           <label for="l-size">L</label>
         </li>
       </ul>
       <button class="modal-form__button button" type="submit">Добавить</button>
     </form>
   </section>
-
+  <script src="js/script.js"></script>
   </body>
 </html>

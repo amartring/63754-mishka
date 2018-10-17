@@ -9,11 +9,11 @@
   <body>
 
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <a class="main-nav__logo">
         <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
       </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list main-nav__list--site-sections">
         <li class="main-nav__item main-nav__item--catalog">
           <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -47,16 +47,17 @@
   <main class="page-main">
 
     <section class="site-sections site-sections--index">
-        <h1 class="site-sections__title">Милые штуки ручной работы для дома</h1>
+      <div class="site-sections__wrapper site-sections__wrapper--index">
+        <h1 class="site-sections__title">Милые штуки ручной<br> работы для дома</h1>
         <ul class="site-sections__list">
           <li class="site-sections__item site-sections__item--interior">
             <a class="site-sections__link" href="#">Предметы интерьера</a>
-            <include class="site-sections__icon site-sections__icon--interior" src="img/icon-interior.svg"></include>
           </li>
           <li class="site-sections__item site-sections__item--toys">
             <a class="site-sections__link" href="#">Детские игрушки</a>
           </li>
         </ul>
+      </div>
     </section>
 
     <section class="best-product">
@@ -132,7 +133,7 @@
         <table class="contacts__list">
           <tr>
             <td class="contacts__item">e-mail:</td>
-            <td  class="contacts__content contacts__content--email">info@mimimishkashop.ru</td>
+            <td class="contacts__content contacts__content--email"><a href="#">info@mimimishkashop.ru</a></td>
           </tr>
           <tr>
             <td class="contacts__item">адрес:</td>
@@ -174,7 +175,6 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <h2 class="visually-hidden">Авторские права</h2>
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
@@ -186,24 +186,24 @@
   <section class="modal-order">
     <h2 class="modal-order__title">Добавить в корзину</h2>
     <form class="modal-order__form modal-form" method="post" action="https://echo.htmlacademy.ru">
+      <input class="visually-hidden modal-form__size-S" type="radio" id="s-size" name="size" checked>
+      <input class="visually-hidden modal-form__size-M" type="radio" id="m-size" name="size">
+      <input class="visually-hidden modal-form__size-L" type="radio" id="l-size" name="size">
       <p class="modal-form__text">Выберите размер:</p>
       <ul class="modal-form__list">
         <li class="modal-form__item">
-          <input class="visually-hidden modal-form__input" type="radio" name="size" value="S" id="s-size" checked>
           <label for="s-size">S</label>
         </li>
         <li class="modal-form__item">
-          <input class="visually-hidden modal-form__input" type="radio" name="size" value="M" id="m-size">
           <label for="m-size">M</label>
         </li>
         <li class="modal-form__item">
-          <input class="visually-hidden modal-form__input" type="radio" name="size" value="L" id="l-size">
           <label for="l-size">L</label>
         </li>
       </ul>
       <button class="modal-form__button button" type="submit">Добавить</button>
     </form>
   </section>
-
+  <script src="js/script.js"></script>
   </body>
 </html>

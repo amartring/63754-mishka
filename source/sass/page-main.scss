@@ -1,20 +1,18 @@
 .page-main {
+  position: relative;
   margin: 0 auto;
-  width: 320px;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
-    margin-top: -78px;
-    width: 768px;
-    border-top: 1px solid #ececec;
+    // top: -87px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main {
-    width: 1150px;
     border: none;
   }
 }

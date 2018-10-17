@@ -10,10 +10,12 @@
 
 .modal-form__list {
   @include no-list;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 31px;
 }
 
-.modal-form__item {
+.modal-form__item label {
   display: inline-block;
   width: 82px;
   height: 52px;
@@ -27,18 +29,16 @@
   text-align: center;
   color: #444444;
   border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 2px solid rgba(68, 68, 68, 0.3);
-  }
-
-  &:active {
-    border: 2px solid #62d1ba;
   }
 }
 
-.modal-form__input:checked {
+.modal-form__size-S:checked ~ .modal-form__list label[for="s-size"],
+.modal-form__size-M:checked ~ .modal-form__list label[for="m-size"],
+.modal-form__size-L:checked ~ .modal-form__list label[for="l-size"] {
   border: 2px solid #62d1ba;
 }
 
@@ -49,8 +49,7 @@
   background-color: $seafoam-blue;
   border: 2px solid $seafoam-blue;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: #ffffff;
     background-color: $seafoam-blue;
   }
@@ -65,7 +64,12 @@
     font-size: 17px;
   }
 
-  .modal-form__item {
+  .modal-form__list {
+    margin-left: 78px;
+    margin-right: 78px;
+  }
+
+  .modal-form__item label {
     width: 112px;
   }
 

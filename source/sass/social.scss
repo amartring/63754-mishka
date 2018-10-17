@@ -1,7 +1,15 @@
+.social {
+  margin: 0 auto;
+  padding: 25px 30px;
+  width: 320px;
+  box-sizing: border-box;
+}
+
 .social__list {
   @include no-list;
   display: flex;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .social__link {
@@ -16,9 +24,19 @@
   .social {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    padding: 50px;
+    width: 768px;
   }
 
   .social__logo {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin: 0 auto;
+    width: 1150px;
   }
 }
