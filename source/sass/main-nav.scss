@@ -1,4 +1,5 @@
 .main-nav {
+  box-sizing: border-box;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -124,8 +125,17 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 768px;
+    background: linear-gradient(
+      #ffffff 88px,
+      rgba(0, 0, 0, 0.1) 88px,
+      transparent 89px,
+      transparent 100%);
   }
 
   .main-nav__logo {
@@ -148,6 +158,7 @@
 
     &--user {
       display: flex;
+      flex-wrap: wrap;
     }
 
     &--delivery {
@@ -203,6 +214,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1150px;
+  }
+
   .main-nav__logo {
     margin-top: 9px;
     margin-bottom: 7px;

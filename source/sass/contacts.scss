@@ -85,7 +85,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-bottom: -59px;
+    margin-bottom: 27px;
     padding-top: 76px;
     padding-bottom: 30px;
     width: 768px;
@@ -141,20 +141,21 @@
 
   .contacts__button {
     margin-left: 271px;
-    padding-left: 35px;
-    padding-right: 33px;
+    padding-left: 37px;
+    padding-right: 38px;
+    font-size: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin-bottom: -104px;
+    margin-bottom: 59px;
     padding-top: 164px;
-    padding-bottom: 105px;
     padding-left: 219px;
     padding-right: 50px;
     width: 1150px;
-    background-size: 1150px 23px;
+    background-size: 1050px 23px;
+    background-position-x: 50px;
 
     &::before {
       content: "";
@@ -203,7 +204,7 @@
   .contacts__button {
     position: absolute;
     left: 225px;
-    bottom: 122px;
+    bottom: 47px;
     margin: 0;
   }
 }

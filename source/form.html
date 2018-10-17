@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <header class="page-header">
+    <header class="page-header page-header--form">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <a class="main-nav__logo"  href="index.html">
           <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
@@ -55,7 +55,7 @@
         <h2 class="visually-hidden">Форма заказа</h2>
         <p class="order-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
           заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="order-form__filters" method="get" action="https://echo.htmlacademy.ru">
+        <form class="form" method="get" action="https://echo.htmlacademy.ru">
           <div class="form-item form-item--type">
             <h3 class="form-item__legend">Тип</h3>
             <ul class="form-item__list form-item__list--radio">
@@ -104,7 +104,7 @@
           </div>
 
           <div class="form-item form-item--name">
-            <h3 class="form-item__legend">Фио</h3>
+            <h3 class="form-item__legend form-item__legend--name">Фио</h3>
             <ul class="form-item__list form-item__list--text">
               <li class="form-item__item form-item__item--name">
                 <label class="form-item__label" for="username">Имя:</label>
@@ -122,16 +122,20 @@
           </div>
 
           <div class="form-item form-item--phone">
-            <h3 class="form-item__legend form-item__legend--phone">Тел</h3>
-            <input class="form-item__input form-item__input--phone-number" type="tel" pattern="\+7\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}"
-              name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone-number" required>
-            <label class="visually-hidden" for="phone-number">Введите номер телефона</label>
+            <div class="form-item__wrapper">
+              <h3 class="form-item__legend form-item__legend--phone">Тел</h3>
+              <input class="form-item__input form-item__input--phone-number" type="tel" pattern="\+7\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}"
+                name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone-number" required>
+              <label class="visually-hidden" for="phone-number">Введите номер телефона</label>
+            </div>
           </div>
 
           <div class="form-item form-item--email">
-            <h3 class="form-item__legend form-item__legend--email">E-mail</h3>
-            <input class="form-item__input form-item__input--email" type="email" name="email" placeholder="Ваш Email*" id="email" required>
-            <label class="visually-hidden" for="email">Введите номер телефона</label>
+            <div class="form-item__wrapper">
+              <h3 class="form-item__legend form-item__legend--email">E-mail</h3>
+              <input class="form-item__input form-item__input--email" type="email" name="email" placeholder="Ваш Email*" id="email" required>
+              <label class="visually-hidden" for="email">Введите email</label>
+            </div>
           </div>
 
           <div class="form-item form-item--textarea">

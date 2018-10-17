@@ -4,9 +4,14 @@
   margin-bottom: 25px;
   box-sizing: border-box;
 
-  &--catalog,
-  &--form {
+  &--catalog {
     margin-bottom: 30px;
+    min-height: 177px;
+    background-color: #f1f1f1;
+  }
+
+  &--form {
+    margin-bottom: 21px;
     min-height: 177px;
     background-color: #f1f1f1;
   }
@@ -20,7 +25,7 @@
   padding-top: 70px;
   width: 320px;
   box-sizing: border-box;
-  border-top: 1px solid #ececec;
+  // border-top: 1px solid #ececec;
 
   &--index {
 
@@ -43,11 +48,14 @@
 .site-sections__title {
   margin: 0 auto;
   padding: 0;
-  max-width: 245px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   color: #010000;
+}
+
+.site-sections--index .site-sections__title {
+  max-width: 245px;
 }
 
 .site-sections__list {
@@ -60,6 +68,7 @@
 
 .site-sections__item {
   position: relative;
+  display: block;
   box-sizing: border-box;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -68,7 +77,7 @@
   text-align: left;
   width: 320px;
   min-height: 103px;
-  cursor: pointer;
+  // cursor: pointer;
 
   &:active {
     .site-sections__link {
@@ -83,7 +92,7 @@
     // background-position: right 36px top 23px;
 
     &:hover {
-      box-shadow: 0 -5px 0 0 $seafoam-blue;
+      box-shadow: 0 -5px 0 0 #59d5bc;
       padding-top: 20px;
       background-color: #59d5bc;
     }
@@ -91,7 +100,6 @@
 
   &--toys {
     background-color: $greeny-blue;
-    // padding-left: 23px;
 
     &:hover {
       box-shadow: 0 -5px 0 0 #46c1ae;
@@ -103,7 +111,7 @@
 
 .site-sections__link {
   display: block;
-  max-width: 120px;
+  padding-right: 120px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -121,7 +129,7 @@
 
 @media (min-width: $tablet-width) {
   .site-sections {
-    margin-bottom: 44px;
+    margin-bottom: 75px;
     background-color: #f9f9f9;
 
     &::after {
@@ -135,25 +143,35 @@
       background-repeat: repeat-x;
       background-size: auto 24px;
     }
+
+    &--catalog,
+    &--form {
+      min-height: 125px;
+      background-color: #f1f1f1;
+    }
+
+    &--form {
+      margin-bottom: 70px;
+    }
   }
 
   .site-sections__wrapper {
-    padding-top: 152px;
+    padding-top: 66px;
     padding-left: 50px;
     padding-right: 50px;
     width: 768px;
     box-sizing: border-box;
-    background-position-y: 0;
+    background-position-y: -90px;
 
     &--index {
-      min-height: 746px;
+      min-height: 658px;
       background-image: url("../img/hero-tablet@1x.jpg");
     }
 
     &--catalog,
     &--form {
-      min-height: 226px;
-      background-color: #f1f1f1;
+      padding-top: 8px;
+      padding-bottom: 19px;
     }
   }
 
@@ -162,6 +180,10 @@
     max-width: 500px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .site-sections--index .site-sections__title {
+    max-width: 100%;
   }
 
   .site-sections__list {
@@ -183,27 +205,38 @@
 
 @media (min-width: $desktop-width) {
   .site-sections {
-    margin-bottom: 122px;
+    margin-bottom: 128px;
 
     &::after {
       bottom: -16px;
       height: 34px;
       background-size: auto 34px;
     }
+
+    &--form {
+      margin-bottom: 121px;
+    }
   }
 
   .site-sections__wrapper {
     margin: 0 auto;
     padding: 0;
-    padding-top: 152px;
+    padding-top: 6px;
     padding-left: 109px;
     padding-right: 109px;
     box-sizing: border-box;
     width: 1150px;
-    border-top: 1px solid #ececec;
+    // border-top: 1px solid #ececec;
 
     &--index {
+      padding-top: 66px;
       background-image: url("../img/hero-desktop@1x.jpg");
+      min-height: 658px;
+    }
+
+    &--catalog,
+    &--form {
+      min-height: 167px;
     }
   }
 
@@ -214,7 +247,6 @@
   }
 
   .site-sections__item {
-    display: inline-block;
     width: 525px;
     min-height: 119px;
   }

@@ -11,17 +11,29 @@
   .page-header {
     // display: flex;
     // margin-bottom: -87px;
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 768px;
+    // padding-left: 50px;
+    // padding-right: 50px;
+    // width: 768px;
+    width: 100%;
     box-shadow: none;
     z-index: 2;
+    background: linear-gradient(
+      #ffffff 88px,
+      #f9f9f9 89px,
+      #f9f9f9 100%);
+
+      &--catalog,
+      &--form {
+        background: linear-gradient(
+          #ffffff 88px,
+          #f1f1f1 89px,
+          #f1f1f1 100%);
+      }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    box-sizing: border-box;
-    width: 1150px;
+    // width: 1150px;
   }
 }
