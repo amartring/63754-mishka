@@ -19,13 +19,13 @@
   &:hover .catalog__wrapper {
     box-shadow:
       inset 0 0 0 1px #ececec,
-      0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+      0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:active .catalog__wrapper {
     box-shadow:
       inset 0 0 0 1px #ececec,
-      0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+      0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -184,6 +184,6 @@
   }
 
   .catalog__price {
-    margin-left: 0  ;
+    margin-left: 0;
   }
 }

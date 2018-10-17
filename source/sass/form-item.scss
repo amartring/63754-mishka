@@ -114,7 +114,6 @@
     &:active {
       color: #444444;
     }
-
   }
 }
 
@@ -274,6 +273,9 @@
   }
 
   .form-item__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 52px;
   }
 
@@ -288,12 +290,6 @@
     padding-left: 31px;
     padding-right: 31px;
     order: -1;
-  }
-
-  .form-item__info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
