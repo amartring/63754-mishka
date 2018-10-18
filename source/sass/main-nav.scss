@@ -8,7 +8,10 @@
 .main-nav__logo {
   display: inline-block;
   margin: 22px 116px;
-  margin-bottom: 17px;
+  margin-bottom: 23px;
+  width: 86px;
+  height: 35px;
+  box-sizing: border-box;
 }
 
 .main-nav__toggle {
@@ -137,8 +140,9 @@
   .main-nav__logo {
     margin: 0;
     margin-top: 22px;
-    margin-bottom: 24px;
     flex-grow: 1;
+    width: 113px;
+    height: 46px;
   }
 
   .main-nav__list {
@@ -218,8 +222,11 @@
     margin-top: 9px;
     margin-bottom: 7px;
     margin-right: 20px;
+    margin-left: 50px;
     flex-grow: 1;
     order: 1;
+    width: 149px;
+    height: 72px;
   }
 
   .main-nav__list {
@@ -238,8 +245,10 @@
 
     &--site-info {
       display: flex;
+      flex-wrap: wrap;
       order: 2;
       min-width: 350px;
+      max-width: 600px;
     }
 
     &--delivery {

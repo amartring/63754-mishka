@@ -11,7 +11,11 @@
     <header class="page-header page-header--catalog">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <a class="main-nav__logo" href="index.html">
-          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип Mishka">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list main-nav__list--site-sections">
@@ -56,7 +60,11 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="auto" alt="Зайчик-попрыгайчик">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="auto" alt="Зайчик-попрыгайчик">
+            </picture>
           </a>
           <div class="catalog__wrapper">
             <div class="catalog__info-wrapper">
@@ -75,7 +83,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="auto" alt="Корзинка для белья">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="auto" alt="Корзинка для белья">
+            </picture>
           </a>
           <div class="catalog__wrapper">
             <div class="catalog__info-wrapper">
@@ -94,7 +106,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="auto" alt="Большая корзинка для игрушек">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="auto" alt="Большая корзинка для игрушек">
+            </picture>
           </a>
           <div class="catalog__wrapper">
             <div class="catalog__info-wrapper">
@@ -116,7 +132,11 @@
 
     <section class="production">
       <div class="production__wrapper">
-        <img class="production__video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видеo: процесс производства">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="production__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видеo: процесс производства">
+        </picture>
         <h2 class="production__title">Процесс производства</h2>
         <div class="production__info">
           <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное
