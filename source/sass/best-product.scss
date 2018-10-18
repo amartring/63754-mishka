@@ -87,7 +87,7 @@
   .best-product {
     position: relative;
     margin-bottom: 49px;
-    padding-bottom: 66px;
+    padding-bottom: 60px;
     padding-left: 50px;
     padding-right: 50px;
     width: 768px;
@@ -154,7 +154,7 @@
   .best-product__order {
     position: absolute;
     left: 46px;
-    bottom: 69px;
+    bottom: 74px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -172,7 +172,7 @@
 @media (min-width: $desktop-width) {
   .best-product {
     margin-bottom: 58px;
-    padding-bottom: 98px;
+    padding-bottom: 92px;
     padding-left: 225px;
     padding-right: 50px;
     width: 1150px;
@@ -181,6 +181,10 @@
     background-size: 1150px 23px;
     background-repeat: no-repeat;
     background-position: bottom 0 left 0;
+
+    picture {
+      z-index: -1;
+    }
   }
 
   .best-product__title {
@@ -216,6 +220,6 @@
 
   .best-product__order {
     left: 223px;
-    bottom: 97px;
+    bottom: 96px;
   }
 }

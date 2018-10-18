@@ -24,16 +24,82 @@
 }
 
 .about__item {
+  position: relative;
+  display: inline-block;
   padding-top: 60px;
   padding-bottom: 23px;
   max-width: 250px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--flower::before {
+    top: 5px;
+    left: 7px;
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-size: 32px 37px;
+  }
+
+  &--money::before {
+    top: 6px;
+    left: 0;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-size: 47px 27px;
+  }
+
+  &--heart::before {
+    top: 10px;
+    left: 7px;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-size: 34px 27px;
+  }
+
+  &--ball::before {
+    top: 9px;
+    left: 2px;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-size: 35px 34px;
+  }
+
+  &--rocket::before {
+    top: 9px;
+    left: -5px;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-size: 55px 23px;
+  }
+
+  &--gift::before {
+    top: 7px;
+    left: 3px;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-size: 33px 32px;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .about {
     margin-bottom: 51px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 88px;
     width: 768px;
   }
 
@@ -49,18 +115,43 @@
   }
 
   .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 20px;
     line-height: 22px;
 
-    &:first-child {
-      margin-right: 100px;
-    }
   }
 
   .about__item {
     padding-top: 79px;
     padding-bottom: 32px;
     max-width: 295px;
+    width: 50%;
+
+    &--money {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--ball {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+
+    &::before {
+      top: 27px;
+    }
   }
 }
 
@@ -78,8 +169,6 @@
   }
 
   .about__list {
-    &:first-child {
-      margin-right: 116px;
-    }
+    margin-right: 55px;
   }
 }
