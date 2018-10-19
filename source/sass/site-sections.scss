@@ -84,6 +84,14 @@
   min-height: 103px;
   // cursor: pointer;
 
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
   &:active {
     .site-sections__link {
       opacity: 0.3;
@@ -92,6 +100,14 @@
 
   &--interior {
     background-color: $seafoam-blue;
+
+    &::after {
+      top: 23px;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url("img/interior.svg");
+    }
 
     &:hover {
       box-shadow: 0 -5px 0 0 #59d5bc;
@@ -102,6 +118,14 @@
 
   &--toys {
     background-color: $greeny-blue;
+
+    &::after {
+      top: 21px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+      background-image: url("img/toy.svg");
+    }
 
     &:hover {
       box-shadow: 0 -5px 0 0 #46c1ae;
