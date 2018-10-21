@@ -26,6 +26,31 @@
   }
 }
 
+.production__container {
+  position: relative;
+}
+
+.production__link {
+  svg {
+    position: absolute;
+    top: 37px;
+    left: 80px;
+    width: 101px;
+    height: 77px;
+  }
+
+  &:hover svg {
+    transform: scale(1.2);
+    transition-duration: 0.4s;
+  }
+
+  &:active svg {
+    transform: scale(0.8);
+    transition-duration: 0.8s;
+    opacity: 0.3;
+  }
+}
+
 .production__title {
   position: relative;
   display: inline-block;
@@ -46,7 +71,7 @@
     left: 34px;
     width: 32px;
     height: 32px;
-    background-image: url("../img/icon-video.svg");
+    background-image: url("../img/video.svg");
     background-repeat: no-repeat;
   }
 }
@@ -54,7 +79,7 @@
 .production__info {
   display: inline-block;
   margin: 34px;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .production__text {
@@ -89,13 +114,23 @@
     &::before {
       content: "";
       position: absolute;
-      top: -3px;
+      top: -5px;
       left: 42px;
     }
   }
 
+  .production__container {
+    margin-bottom: 33px;
+  }
+
+  .production__link {
+    svg {
+      top: 189px;
+      left: 283px;
+    }
+  }
+
   .production__video {
-    margin-bottom: 38px;
     width: 668px;
     height: 455px;
   }
@@ -143,12 +178,25 @@
     }
   }
 
+  .production__container {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 682px;
+    height: auto;
+  }
+
   .production__video {
     position: absolute;
     display: block;
     margin: 0;
     width: 682px;
     height: 455px;
+  }
+
+  .production__link svg {
+    top: 190px;
+    left: 292px;
   }
 
   .production__info {

@@ -75,14 +75,14 @@
   position: relative;
   display: block;
   box-sizing: border-box;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 29px;
-  padding-right: 120px;
   text-align: left;
   width: 320px;
   min-height: 103px;
-  // cursor: pointer;
+
+  svg {
+    position: absolute;
+    opacity: 0.5;
+  }
 
   &:active {
     .site-sections__link {
@@ -93,29 +93,58 @@
   &--interior {
     background-color: $seafoam-blue;
 
+    svg {
+      top: 23px;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+    }
+
     &:hover {
       box-shadow: 0 -5px 0 0 #59d5bc;
-      padding-top: 20px;
       background-color: #59d5bc;
+
+      svg {
+        top: 18px;
+        opacity: 0.7;
+      }
     }
   }
 
   &--toys {
     background-color: $greeny-blue;
 
+    svg {
+      top: 21px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+    }
+
     &:hover {
       box-shadow: 0 -5px 0 0 #46c1ae;
-      padding-top: 20px;
       background-color: #46c1ae;
+
+      svg {
+        top: 16px;
+        opacity: 0.7;
+      }
     }
   }
 }
 
 .site-sections__link {
   display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 29px;
   padding-right: 120px;
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    padding-top: 20px;
+  }
 }
 
 .site-sections__icon {
@@ -149,6 +178,7 @@
 
     &--catalog,
     &--form {
+      margin-bottom: 77px;
       min-height: 125px;
       background-color: #f1f1f1;
     }
@@ -202,12 +232,36 @@
   }
 
   .site-sections__item {
-    padding-top: 26px;
-    padding-bottom: 31px;
-    padding-left: 35px;
     width: 334px;
     min-height: 119px;
     flex-grow: 1;
+
+    &--interior {
+      svg {
+        top: 30px;
+      }
+
+      &:hover svg {
+        top: 25px;
+      }
+    }
+
+    &--toys {
+      svg {
+        top: 32px;
+        right: 34px;
+      }
+
+      &:hover svg {
+        top: 27px;
+      }
+    }
+  }
+
+  .site-sections__link {
+    padding-top: 26px;
+    padding-bottom: 31px;
+    padding-left: 35px;
   }
 }
 
@@ -219,6 +273,10 @@
       bottom: -16px;
       height: 34px;
       background-size: auto 34px;
+    }
+
+    &--catalog {
+      margin-bottom: 127px;
     }
 
     &--form {
@@ -234,7 +292,6 @@
     padding-right: 109px;
     box-sizing: border-box;
     width: 1150px;
-    // border-top: 1px solid #ececec;
 
     &--index {
       padding-top: 66px;
@@ -257,5 +314,11 @@
   .site-sections__item {
     width: 525px;
     min-height: 119px;
+  }
+
+  .site-sections__link {
+    padding-top: 28px;
+    padding-left: 36px;
+    padding-right: 310px;
   }
 }
