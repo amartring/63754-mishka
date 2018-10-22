@@ -1,5 +1,4 @@
 "use strict";
-
 var gulp = require("gulp");
 var del = require("del");
 var sass = require("gulp-sass");
