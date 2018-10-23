@@ -23,12 +23,12 @@ modalLink.addEventListener("click", function (evt) {
   overlay.classList.add("overlay-view");
 });
 
-// window.addEventListener("keydown", function (evt) {
-//   if (evt.keyCode === 27) {
-//     evt.preventDefault();
-//     if (modalOrder.classList.contains("modal-view")) {
-//       modalOrder.classList.remove("modal-view");
-//       overlay.classList.remove("overlay-view");
-//     }
-//   }
-// });
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (modalOrder.classList.contains("modal-view")) {
+      modalOrder.classList.remove("modal-view");
+      overlay.classList.remove("overlay-view");
+    }
+  }
+});
