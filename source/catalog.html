@@ -6,7 +6,7 @@
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
     <link rel="preload" href="/fonts/opensans.woff2" as="font">
-    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
 
@@ -91,7 +91,7 @@
             </div>
             <div class="catalog__order-wrapper">
               <p class="catalog__price">1 200 руб.</p>
-              <svg class="catalog__button" width="20" height="19"><use xlink:href="#icon-cart"></use></svg>
+              <svg class="catalog__button modal-button" width="20" height="19"><use xlink:href="#icon-cart"></use></svg>
             </div>
           </div>
         </li>
@@ -116,7 +116,7 @@
             </div>
             <div class="catalog__order-wrapper">
               <p class="catalog__price">690 руб.</p>
-              <svg class="catalog__button" width="20" height="19"><use xlink:href="#icon-cart"></use></svg>
+              <svg class="catalog__button modal-button" width="20" height="19"><use xlink:href="#icon-cart"></use></svg>
             </div>
           </div>
         </li>
@@ -141,7 +141,7 @@
             </div>
             <div class="catalog__order-wrapper">
               <p class="catalog__price">1 500 руб.</p>
-              <svg class="catalog__button" width="20" height="19"><use xlink:href="#icon-cart"></use></svg>
+              <svg class="catalog__button modal-button" width="20" height="19"><use xlink:href="#icon-cart"></use></svg>
             </div>
           </div>
         </li>
@@ -227,6 +227,7 @@
       <button class="modal-form__button button" type="submit">Добавить</button>
     </form>
   </section>
+  <div class="modal-overlay"></div>
   <script src="js/script.js"></script>
   </body>
 </html>
