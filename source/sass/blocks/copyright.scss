@@ -1,14 +1,11 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 15px;
+  position: relative;
+  padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .copyright__text {
-  margin: 0;
   padding: 0;
   font-size: 19px;
   line-height: 18px;
@@ -17,7 +14,15 @@
 }
 
 .copyright__link {
-  padding-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+
+  &:active .copyright__text {
+    opacity: 0.3;
+  }
 
   svg {
     width: 27px;
@@ -46,5 +51,6 @@
 
   .copyright__link {
     padding: 0;
+    width: 100%;
   }
 }

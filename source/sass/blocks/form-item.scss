@@ -356,8 +356,14 @@
   .form-item__input {
     margin: 0;
     padding-left: 18px;
+    padding-right: 18px;
     font-size: 19px;
     background-color: inherit;
+
+    &--phone-number,
+    &--email {
+      padding-right: 70px;
+    }
   }
 
   .form-item__input--text {
@@ -475,6 +481,10 @@
     width: 33px;
     height: 22px;
     background-size: 33px 22px;
+  }
+
+  .form-item__list--checkbox .form-item__item--toggle:last-child {
+    margin-bottom: 57px;
   }
 
   .form-item__info {
