@@ -1,14 +1,7 @@
 .page-main {
   position: relative;
   margin: 0 auto;
-  box-sizing: border-box;
   z-index: 1;
-}
-
-@media (min-width: $tablet-width) {
-  .page-main {
-    // top: -87px;
-  }
 }
 
 @media (min-width: $desktop-width) {

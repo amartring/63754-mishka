@@ -17,8 +17,7 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  @include no-indent;
   font-family: "OpenSans", "Arial", sans-serif;
 }
 
@@ -37,9 +36,16 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  // -webkit-clip-path: inset(100%);
-  //
-  //         clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }

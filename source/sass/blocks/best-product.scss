@@ -5,7 +5,6 @@
   padding-bottom: 41px;
   padding-left: 30px;
   padding-right: 30px;
-  box-sizing: border-box;
   width: 320px;
   color: #444444;
 
@@ -24,9 +23,8 @@
 }
 
 .best-product__title {
-  margin: 0;
+  @include no-indent;
   margin-bottom: 5px;
-  padding: 0;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -34,9 +32,8 @@
 }
 
 .best-product__category {
-  margin: 0;
+  @include no-indent;
   margin-bottom: 23px;
-  padding: 0;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -49,9 +46,8 @@
 }
 
 .best-product__description {
-  margin: 0;
+  @include no-indent;
   margin-bottom: 17px;
-  padding: 0;
   font-size: 15px;
   line-height: 24px;
 }
@@ -83,9 +79,8 @@
 }
 
 .best-product__price {
-  margin: 0;
+  @include no-indent;
   margin-bottom: 25px;
-  padding: 0;
 }
 
 .best-product__button {
@@ -108,7 +103,6 @@
       background-size: auto 15px;
       transform: rotate(180deg);
     }
-
   }
 
   .best-product__title {

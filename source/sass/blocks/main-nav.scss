@@ -1,5 +1,4 @@
 .main-nav {
-  box-sizing: border-box;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -11,7 +10,6 @@
   margin-bottom: 23px;
   width: 86px;
   height: 35px;
-  box-sizing: border-box;
 }
 
 .main-nav__logo[href]:hover {
@@ -102,7 +100,6 @@
 }
 
 .main-nav__item {
-  box-sizing: border-box;
   padding-left: 76px;
   padding-right: 50px;
   padding-top: 28px;
@@ -212,7 +209,6 @@
     &--order {
       padding-left: 0;
       padding-top: 18px;
-      // padding-right: 15px;
     }
 
     &--order {
@@ -309,11 +305,6 @@
     &--catalog {
       min-width: 185px;
       border-right: 1px solid #ececec;
-    }
-
-    &--order {
-      // padding-left: 54px;
-      // width: 265px;
     }
 
     &--search {

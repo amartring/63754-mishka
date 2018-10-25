@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   margin-bottom: 25px;
-  box-sizing: border-box;
 
   &--catalog {
     margin-bottom: 30px;
@@ -24,7 +23,6 @@
   margin: 0 auto;
   padding-top: 70px;
   width: 320px;
-  box-sizing: border-box;
   box-shadow: 0 -1px 0 0 #ececec;
 
   &--index {
@@ -74,7 +72,6 @@
 .site-sections__item {
   position: relative;
   display: block;
-  box-sizing: border-box;
   text-align: left;
   width: 320px;
   min-height: 103px;
@@ -193,7 +190,6 @@
     padding-left: 50px;
     padding-right: 50px;
     width: 768px;
-    box-sizing: border-box;
     background-position-y: -90px;
 
     &--index {
@@ -290,7 +286,6 @@
     padding-top: 6px;
     padding-left: 109px;
     padding-right: 109px;
-    box-sizing: border-box;
     width: 1150px;
 
     &--index {
