@@ -219,27 +219,6 @@
   color: #444444;
 }
 
-.form-item__info {
-  margin-top: 13px;
-}
-
-.form-item__text {
-  @include no-indent;
-  display: block;
-  margin-bottom: 31px;
-  color: #444444;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.form-item__button {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 44px;
-  padding-right: 44px;
-  line-height: 16px;
-}
-
 .form-item__input--phone-number:focus + label,
 .form-item__input--email:focus + label {
   display: none;
@@ -427,30 +406,9 @@
     right: 72px;
   }
 
-  .form-item__info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 52px;
-  }
-
-  .form-item__text {
-    margin: 0;
-    text-align: right;
-    font-size: 17px;
-    line-height: 30px;
-  }
-
   .form-item__input--textarea {
     padding-top: 13px;
     padding-left: 15px;
-  }
-
-  .form-item__button {
-    padding-top: 18px;
-    padding-left: 29px;
-    padding-right: 30px;
-    order: -1;
   }
 }
 
@@ -507,12 +465,6 @@
   .form-item__list--checkbox .form-item__item--toggle:last-child {
     margin-bottom: 57px;
   }
-
-  .form-item__info {
-    padding-left: 225px;
-    padding-right: 225px;
-  }
-
 
   .form-item__legend {
     width: 115px;

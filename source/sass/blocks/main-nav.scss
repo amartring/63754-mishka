@@ -243,6 +243,18 @@
   .main-nav__search-text {
     display: none;
   }
+
+  .main-nav__list--user .main-nav__item--search {
+    padding-left: 0;
+  }
+
+  .main-nav__item--search .main-nav__link {
+    display: block;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 100%;
+    width: 82px;
+  }
 }
 
 @media (min-width: $desktop-width) {
