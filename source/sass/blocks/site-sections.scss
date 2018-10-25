@@ -132,6 +132,10 @@
   color: #ffffff;
   text-decoration: none;
 
+  svg {
+    pointer-events: none;
+  }
+
   &:hover {
     padding-top: 20px;
 
