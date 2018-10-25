@@ -20,7 +20,11 @@
   flex-wrap: wrap;
   text-decoration: none;
 
-  &:active .copyright__text {
+  span {
+    pointer-events: none;
+  }
+
+  &:active span {
     opacity: 0.3;
   }
 
@@ -28,6 +32,7 @@
     width: 27px;
     height: 34px;
     fill: $seafoam-blue;
+    pointer-events: none;
   }
 
   &:hover svg {

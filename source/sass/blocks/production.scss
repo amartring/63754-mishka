@@ -30,12 +30,17 @@
 }
 
 .production__link {
+  position: absolute;
+  top: 37px;
+  left: 80px;
+  display: block;
+  width: 101px;
+  height: 77px;
+
   svg {
-    position: absolute;
-    top: 37px;
-    left: 80px;
     width: 101px;
     height: 77px;
+    pointer-events: none;
   }
 
   &:hover svg {
@@ -128,10 +133,8 @@
   }
 
   .production__link {
-    svg {
-      top: 189px;
-      left: 283px;
-    }
+    top: 189px;
+    left: 283px;
   }
 
   .production__video {

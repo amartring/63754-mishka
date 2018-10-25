@@ -36,6 +36,7 @@
 .catalog__link {
   @include no-indent;
   display: block;
+
   font-size: 0;
   text-decoration: none;
   color: #000000;
@@ -91,16 +92,22 @@
 }
 
 .catalog__button {
+  display: block;
   width: 20px;
   height: 19px;
-  fill: rgba(0, 0, 0, 0.2);
-  cursor: pointer;
 
-  &:hover {
+  svg {
+    width: 20px;
+    height: 19px;
+    fill: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+  }
+
+  &:hover svg {
     fill: $seafoam-blue;
   }
 
-  &:active {
+  &:active svg {
     fill: $seafoam-blue;
     opacity: 0.3;
   }
@@ -151,11 +158,6 @@
   .catalog__price {
     margin-left: 5px;
     font-size: 17px;
-  }
-
-  .catalog__button {
-    min-width: 21px;
-    height: 18px;
   }
 }
 

@@ -86,10 +86,6 @@
 .main-nav__list {
   @include no-list;
 
-  &--user .main-nav__item {
-    padding-left: 31px;
-  }
-
   &--site-info {
     display: none;
   }
@@ -229,7 +225,6 @@
 
     &--cart {
       width: 264px;
-      padding-top: 31px;
       padding-right: 0;
       text-align: right;
     }
@@ -248,12 +243,21 @@
     padding-left: 0;
   }
 
-  .main-nav__item--search .main-nav__link {
+  .main-nav__list--user .main-nav__link {
+    position: relative;
     display: block;
     padding-left: 32px;
     padding-right: 32px;
     height: 100%;
-    width: 82px;
+
+    svg {
+      pointer-events: none;
+    }
+  }
+
+  .main-nav__item--cart .main-nav__link {
+    padding-top: 32px;
+    padding-right: 0;
   }
 }
 

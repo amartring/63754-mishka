@@ -25,10 +25,12 @@
 }
 
 .social__link {
+  display: block;
   text-decoration: none;
 
   svg {
     fill: #231f20;
+    pointer-events: none;
   }
 
   &:hover .social__icon {
@@ -54,8 +56,13 @@
   }
 
   .social__logo {
-    display: block;
+    position: relative;
+    display: inline-block;
     min-width: 175px;
+
+    &::before {
+      @include svg-fix;
+    }
 
     &:hover svg {
       fill: #46c1ae;
