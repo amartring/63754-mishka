@@ -27,6 +27,10 @@
   }
 }
 
+.catalog__image {
+  overflow: hidden;
+}
+
 .catalog__link {
   @include no-indent;
   display: block;

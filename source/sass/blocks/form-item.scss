@@ -87,8 +87,10 @@
 .form-item__input {
   position: relative;
   margin-bottom: 22px;
+  padding-bottom: 4px;
   width: 100%;
   height: 52px;
+  font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
@@ -100,6 +102,10 @@
   &:focus,
   &:active {
     box-shadow: inset 0 -2px 0 0 #62d1ba;
+  }
+
+  &--phone-number {
+    font-size: 19px;
   }
 
   &--textarea {
@@ -130,10 +136,10 @@
 .form-item__input--radio + label::before {
   content: "";
   position: absolute;
-  top: -8px;
+  top: -7px;
   left: -64px;
-  width: 36px;
-  height: 36px;
+  width: 39px;
+  height: 39px;
   border: 2px solid #444444;
   border-radius: 50%;
 }
@@ -154,8 +160,8 @@
   position: absolute;
   top: -7px;
   left: -64px;
-  width: 36px;
-  height: 35px;
+  width: 40px;
+  height: 39px;
   border: 2px solid #444444;
 }
 
@@ -182,6 +188,11 @@
 .form-item__input--checkbox:active + label::before {
   border: 2px solid #444444;
   opacity: 0.3;
+}
+
+.form-item__input--radio:disabled + label::before,
+.form-item__input--checkbox:disabled + label::before {
+  opacity: 0.1;
 }
 
 .form-item--phone svg,
@@ -222,8 +233,11 @@
 }
 
 .form-item__button {
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 44px;
+  padding-right: 44px;
+  line-height: 16px;
 }
 
 .form-item__input--phone-number:focus + label,
@@ -251,7 +265,7 @@
       padding-top: 65px;
 
       .form-item__item--toggle {
-        width: 32%;
+        width: 48%;
       }
     }
 
@@ -299,7 +313,7 @@
 
   .form-item__item--toggle {
     margin-bottom: 57px;
-    padding-left: 80px;
+    padding-left: 81px;
   }
 
   .form-item__legend {
@@ -369,8 +383,8 @@
     position: absolute;
     top: -11px;
     left: -79px;
-    width: 47px;
-    height: 47px;
+    width: 51px;
+    height: 51px;
   }
 
   .form-item__input--radio:checked + label::after {
@@ -388,8 +402,8 @@
     position: absolute;
     top: -12px;
     left: -79px;
-    width: 50px;
-    height: 48px;
+    width: 54px;
+    height: 52px;
   }
 
   .form-item__input--checkbox:checked + label::after {
@@ -427,14 +441,24 @@
     line-height: 30px;
   }
 
+  .form-item__input--textarea {
+    padding-top: 13px;
+    padding-left: 15px;
+  }
+
   .form-item__button {
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-top: 18px;
+    padding-left: 29px;
+    padding-right: 30px;
     order: -1;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form-item__input {
+    padding-bottom: 7px;
+  }
+
   .form-item--type,
   .form-item--name,
   .form-item--textarea,
@@ -453,8 +477,12 @@
     margin-right: 80px;
   }
 
-  .form-item--textarea {
-    margin-bottom: 47px;
+  .form-item__input--radio + label::before {
+    left: -82px;
+  }
+
+  .form-item__input--radio:checked + label::after {
+    left: -66px;
   }
 
   .form-item__input--checkbox + label::before {
@@ -462,8 +490,8 @@
     position: absolute;
     top: -12px;
     left: -82px;
-    width: 50px;
-    height: 48px;
+    width: 54px;
+    height: 51px;
   }
 
   .form-item__input--checkbox:checked + label::after {
@@ -500,8 +528,13 @@
 
   .form-item--color {
     .form-item__item--toggle {
-      width: 22%;
+      padding-left: 79px;
+      width: 32%;
     }
+  }
+
+  .form-item--phone {
+    padding-top: 49px;
   }
 
   .form-item--phone svg,
@@ -513,5 +546,15 @@
 
   .form-item--email svg {
     right: 230px;
+  }
+
+  .form-item--textarea {
+    margin-bottom: 47px;
+    padding-top: 38px;
+  }
+
+  .form-item__input--textarea {
+    padding-top: 12px;
+    padding-left: 14px;
   }
 }

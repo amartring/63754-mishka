@@ -68,6 +68,7 @@
 
 .best-product__image {
   margin-bottom: 21px;
+  overflow: hidden;
 }
 
 .best-product__order {
@@ -161,7 +162,7 @@
   .best-product__order {
     position: absolute;
     left: 46px;
-    bottom: 74px;
+    bottom: 68px;
     font-size: 20px;
     line-height: 24px;
   }

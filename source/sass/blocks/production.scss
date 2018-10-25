@@ -50,6 +50,12 @@
   }
 }
 
+.production__video {
+  width: 260px;
+  height: 150px;
+  overflow: hidden;
+}
+
 .production__title {
   position: relative;
   display: inline-block;

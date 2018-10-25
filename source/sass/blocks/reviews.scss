@@ -40,6 +40,10 @@
   @include no-indent;
   font-size: 15px;
   line-height: 30px;
+
+  br {
+    display: none;
+  }
 }
 
 .reviews__author {
@@ -174,6 +178,10 @@
 
   .reviews__text {
     max-width: 770px;
+
+    br {
+      display: initial;
+    }
   }
 
   .reviews__button {

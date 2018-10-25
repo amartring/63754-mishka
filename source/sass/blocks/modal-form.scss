@@ -42,11 +42,13 @@
 }
 
 .modal-form__button {
+  margin: 0 auto;
   padding-left: 82px;
   padding-right: 83px;
   color: #ffffff;
   background-color: $seafoam-blue;
   border: 2px solid $seafoam-blue;
+  cursor: pointer;
 
   &:hover {
     color: #ffffff;
