@@ -140,6 +140,7 @@
       background-image: url("../img/flag.svg");
     }
   }
+
   .contacts__info {
     display: flex;
     flex-direction: row;
@@ -208,6 +209,7 @@
       display: none;
     }
   }
+
   .contacts__info {
     @include no-indent;
     flex-direction: column;
