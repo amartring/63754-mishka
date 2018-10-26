@@ -104,6 +104,11 @@
   box-shadow:
     0 1px 0 0 #ececec,
     inset 0 1px 0 0 #ececec;
+
+  &--search,
+  &--cart {
+    padding-left: 25px;
+  }
 }
 
 .main-nav__link {
@@ -153,10 +158,16 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 50px;
     width: 768px;
-    background: linear-gradient(#ffffff 88px, rgba(0, 0, 0, 0.1) 88px, transparent 89px, transparent 100%);
+    background: linear-gradient(#ffffff 50%, #f9f9f9 50%, #f9f9f9 100%);
+  }
+
+  .main-nav__logo-container {
+    padding-left: 50px;
+    flex-grow: 1;
+    box-shadow: 0 1px 0 0 #ececec;
+    background-color: #ffffff;
+    z-index: 2;
   }
 
   .main-nav__logo {
@@ -173,21 +184,28 @@
       flex-direction: row;
       flex-wrap: wrap;
       order: 1;
-      width: 350px;
+      padding-left: 50px;
       font-size: 15px;
       line-height: 24px;
+      background-color: #f9f9f9;
     }
 
     &--user {
       display: flex;
+      align-items: flex-start;
       flex-wrap: wrap;
+      padding-right: 50px;
       max-width: 400px;
+      box-shadow: 0 1px 0 0 #ececec;
+      background-color: #ffffff;
+      z-index: 2;
     }
 
     &--delivery {
       margin-left: auto;
       display: inline-block;
       order: 2;
+      padding-right: 50px;
       font-size: 15px;
       line-height: 24px;
       font-weight: normal;
@@ -206,10 +224,14 @@
       margin-right: 35px;
       padding-left: 0;
       padding-top: 18px;
+      padding-bottom: 15px;
     }
 
     &--search {
+      padding: 0;
+      padding-bottom: 15px;
       width: 82px;
+      height: 100%;
       box-shadow:
         inset 1px 0 0 0 #ececec,
         inset -1px 0 0 0 #ececec;
@@ -220,6 +242,8 @@
     }
 
     &--cart {
+      padding: 0;
+      padding-bottom: 15px;
       width: 266px;
       padding-right: 0;
       text-align: right;
@@ -237,10 +261,6 @@
   .main-nav__toggle,
   .main-nav__search-text {
     display: none;
-  }
-
-  .main-nav__list--user .main-nav__item {
-    padding: 0;
   }
 
   .main-nav__list--user .main-nav__link {
@@ -262,7 +282,17 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    padding: 0;
     width: 1150px;
+    background: linear-gradient(#ffffff 50%, #f9f9f9 50%, #f9f9f9 100%);
+  }
+
+  .main-nav__logo-container {
+    margin: 0;
+    padding-left: 0;
+    background-color: #ffffff;
+    width: 279px;
+    order: 1;
   }
 
   .main-nav__logo {
@@ -282,7 +312,8 @@
       align-items: flex-start;
       flex-wrap: wrap;
       width: auto;
-      max-width: 450px;
+      box-shadow: 0 1px 0 0 #ececec;
+      background-color: #ffffff;
       font-size: 17px;
       line-height: 24px;
       order: 0;
@@ -290,12 +321,14 @@
 
     &--user {
       display: flex;
+      background-color: #ffffff;
       order: 2;
     }
 
     &--site-info {
       display: flex;
       flex-wrap: wrap;
+      padding-left: 50px;
       order: 2;
       min-width: 350px;
       max-width: 600px;
@@ -317,6 +350,7 @@
       padding-top: 30px;
       padding-right: 5px;
       width: 167px;
+      height: 100%;
     }
 
     &--catalog {
