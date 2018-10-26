@@ -1,41 +1,25 @@
-@import "variables.scss";
-@import "mixins.scss";
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensans.woff") format("woff");
-  src: url("../fonts/opensans.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensansbold.woff") format("woff");
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@import "scaffolding.scss";
-@import "button";
-@import "page-header.scss";
-@import "main-nav.scss";
-@import "site-list.scss";
-@import "page-main.scss";
-@import "site-sections.scss";
-@import "best-product.scss";
-@import "about.scss";
-@import "reviews.scss";
-@import "slider.scss";
-@import "contacts.scss";
-@import "page-footer.scss";
-@import "social.scss";
-@import "copyright.scss";
-@import "modal-order.scss";
-@import "catalog.scss";
-@import "production.scss";
-@import "order-form.scss";
-@import "form.scss";
-@import "form-item.scss";
-@import "modal-form.scss";
+@import "blocks/variables.scss";
+@import "blocks/mixins.scss";
+@import "blocks/scaffolding.scss";
+@import "blocks/button";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/site-sections.scss";
+@import "blocks/best-product.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/modal-order.scss";
+@import "blocks/catalog.scss";
+@import "blocks/production.scss";
+@import "blocks/order-form.scss";
+@import "blocks/form.scss";
+@import "blocks/form-item.scss";
+@import "blocks/modal-form.scss";
+@import "blocks/modal-overlay";

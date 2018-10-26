@@ -3,7 +3,6 @@
   margin-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  box-sizing: border-box;
   width: 320px;
 }
 
@@ -13,7 +12,6 @@
 
 .catalog__item {
   margin-bottom: 30px;
-  box-sizing: border-box;
   box-shadow: inset 0 0 0 1px #ececec;
 
   &:hover .catalog__wrapper {
@@ -29,10 +27,16 @@
   }
 }
 
+.catalog__image {
+  width: 260px;
+  height: 195px;
+  overflow: hidden;
+}
+
 .catalog__link {
+  @include no-indent;
   display: block;
-  margin: 0;
-  padding: 0;
+
   font-size: 0;
   text-decoration: none;
   color: #000000;
@@ -51,7 +55,6 @@
 .catalog__wrapper {
   padding: 28px;
   padding-top: 27px;
-  // box-shadow: inset 0 0 0 1px #ececec;
 }
 
 .catalog__info-wrapper {
@@ -66,8 +69,7 @@
 }
 
 .catalog__characteristic {
-  margin: 0;
-  padding: 0;
+  @include no-indent;
   padding-top: 5px;
   font-size: 13px;
   line-height: 30px;
@@ -82,8 +84,7 @@
 }
 
 .catalog__price {
-  margin: 0;
-  padding: 0;
+  @include no-indent;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
@@ -91,16 +92,22 @@
 }
 
 .catalog__button {
+  display: block;
   width: 20px;
   height: 19px;
-  fill: rgba(0, 0, 0, 0.2);
-  cursor: pointer;
 
-  &:hover {
+  svg {
+    width: 20px;
+    height: 19px;
+    fill: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+  }
+
+  &:hover svg {
     fill: $seafoam-blue;
   }
 
-  &:active {
+  &:active svg {
     fill: $seafoam-blue;
     opacity: 0.3;
   }
@@ -151,11 +158,6 @@
   .catalog__price {
     margin-left: 5px;
     font-size: 17px;
-  }
-
-  .catalog__button {
-    min-width: 21px;
-    height: 18px;
   }
 }
 

@@ -3,7 +3,6 @@
   padding: 25px 30px;
   padding-left: 28px;
   width: 320px;
-  box-sizing: border-box;
 }
 
 .social__list {
@@ -26,17 +25,19 @@
 }
 
 .social__link {
+  display: block;
   text-decoration: none;
 
   svg {
     fill: #231f20;
+    pointer-events: none;
   }
 
-  &:hover svg {
+  &:hover .social__icon {
     fill: #46c1ae;
   }
 
-  &:active svg {
+  &:active .social__icon {
     fill: rgba(70, 193, 174, 0.3);
   }
 }
@@ -49,15 +50,19 @@
   .social {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
     margin: 0 auto;
     padding: 50px;
     width: 768px;
   }
 
   .social__logo {
-    display: block;
+    position: relative;
+    display: inline-block;
     min-width: 175px;
+
+    svg {
+      pointer-events: none;
+    }
 
     &:hover svg {
       fill: #46c1ae;
@@ -66,6 +71,10 @@
     &:active svg {
       fill: rgba(70, 193, 174, 0.3);
     }
+  }
+
+  .social__item {
+    margin-top: 8px;
   }
 
   .social__list {

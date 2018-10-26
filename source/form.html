@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
 
@@ -52,9 +54,11 @@
             <a class="main-nav__link" href="#">Распродажа</a>
           </li>
         </ul>
-        <div class="main-nav__list main-nav__list--delivery">
-          <a class="main-nav__link" href="#">Бесплатная доставка по России</a>
-        </div>
+        <ul class="main-nav__list main-nav__list--delivery">
+          <li class="main-nav__item main-nav__item--delivery">
+            <a class="main-nav__link" href="#">Бесплатная доставка по России</a>
+          </li>
+        </li>
       </nav>
     </header>
 
@@ -160,9 +164,9 @@
             <label class="visually-hidden" for="requests">Ваши пожелания к заказу</label>
           </div>
 
-          <div class="form-item__info">
-            <p class="form-item__text">*Поля обязательны для заполнения</p>
-            <button class="form-item__button button" type="submit">Отправить заказ</button>
+          <div class="form__info">
+            <p class="form__text">*Поля обязательны для заполнения</p>
+            <button class="form__button button" type="submit">Отправить заказ</button>
           </div>
         </form>
       </section>
@@ -177,23 +181,26 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              <svg width="22" height="21"><use xlink:href="#icon-insta"></use></svg>
+              <svg class="social__icon" width="22" height="21"><use xlink:href="#icon-insta"></use></svg>
+              <span class="visually-hidden">Мы в Instagram</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <svg width="15" height="28"><use xlink:href="#icon-fb"></use></svg>
+              <svg class="social__icon" width="15" height="28"><use xlink:href="#icon-fb"></use></svg>
+              <span class="visually-hidden">Мы в Facebook</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
-              <svg width="23" height="20"><use xlink:href="#icon-twitter"></use></svg>
+              <svg class="social__icon" width="23" height="20"><use xlink:href="#icon-twitter"></use></svg>
+              <span class="visually-hidden">Мы в Twitter</span>
             </a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">Разработано</span>
             <svg width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg>
           </a>
         </div>

@@ -19,7 +19,6 @@
   display: inline-block;
   width: 82px;
   height: 52px;
-  box-sizing: border-box;
   padding-top: 19px;
   padding-bottom: 20px;
   font-size: 17px;
@@ -43,11 +42,13 @@
 }
 
 .modal-form__button {
+  margin: 0 auto;
   padding-left: 82px;
   padding-right: 83px;
   color: #ffffff;
   background-color: $seafoam-blue;
   border: 2px solid $seafoam-blue;
+  cursor: pointer;
 
   &:hover {
     color: #ffffff;
