@@ -1,6 +1,6 @@
 .order-form {
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 59px;
   padding-left: 30px;
   padding-right: 30px;
   width: 320px;
@@ -8,7 +8,7 @@
 
 .order-form__text {
   @include no-indent;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
@@ -16,7 +16,7 @@
 
 @media (min-width: $tablet-width) {
   .order-form {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
     padding: 0;
     width: 100%;
   }

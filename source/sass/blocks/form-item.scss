@@ -6,15 +6,15 @@
   color: #000000;
 
   &--type {
-    margin-bottom: 17px;
+    margin-bottom: 21px;
   }
 
   &--color {
-    margin-bottom: 44px;
+    margin-bottom: 48px;
   }
 
   &--name {
-    margin-bottom: 9px;
+    margin-bottom: 11px;
   }
 
   &--phone,
@@ -240,6 +240,10 @@
       }
     }
 
+    &--type {
+      padding-bottom: 16px;
+    }
+
     &--color {
       padding-top: 65px;
 
@@ -250,7 +254,7 @@
 
     &--name {
       padding-bottom: 27px;
-      padding-top: 48px;
+      padding-top: 50px;
     }
 
     &--color,
@@ -479,6 +483,8 @@
   }
 
   .form-item--color {
+    padding-bottom: 11px;
+
     .form-item__item--toggle {
       padding-left: 79px;
       width: 32%;

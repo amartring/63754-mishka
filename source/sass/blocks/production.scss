@@ -94,7 +94,7 @@
 
 .production__text {
   @include no-indent;
-  padding-bottom: 24px;
+  padding-bottom: 27px;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
@@ -107,7 +107,7 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    margin-bottom: 63px;
+    margin-bottom: 66px;
     padding-left: 50px;
     padding-right: 50px;
     width: 768px;
@@ -160,7 +160,7 @@
 
 @media (min-width: $desktop-width) {
   .production {
-    margin-bottom: 105px;
+    margin-bottom: 108px;
     padding-left: 50px;
     padding-right: 50px;
     width: 1150px;
@@ -201,7 +201,7 @@
     height: 455px;
   }
 
-  .production__link svg {
+  .production__link {
     top: 190px;
     left: 292px;
   }
