@@ -184,6 +184,7 @@
       flex-wrap: wrap;
       order: 1;
       padding-left: 50px;
+      max-width: 490px;
       font-size: 15px;
       line-height: 24px;
       background-color: #f9f9f9;
@@ -295,7 +296,7 @@
     margin: 0;
     padding-left: 0;
     background-color: #ffffff;
-    width: 279px;
+    width: 255px;
     order: 1;
   }
 
@@ -364,7 +365,7 @@
       padding-top: 30px;
       padding-right: 5px;
       width: 167px;
-      height: 100%;
+      // height: 100%;
     }
 
     &--catalog {
