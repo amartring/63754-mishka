@@ -1,6 +1,6 @@
 .catalog {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   padding-left: 30px;
   padding-right: 30px;
   width: 320px;
@@ -163,7 +163,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    margin-bottom: 37px;
+    margin-bottom: 36px;
     padding-left: 50px;
     padding-right: 50px;
     width: 1150px;
@@ -189,6 +189,10 @@
   .catalog__image {
     min-width: 316px;
     height: 462px;
+  }
+
+  .catalog__order-wrapper {
+    padding-top: 24px;
   }
 
   .catalog__wrapper {
