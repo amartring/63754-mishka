@@ -10,11 +10,11 @@
     width: 100%;
     box-shadow: none;
     z-index: 2;
-    background: linear-gradient(#ffffff 88px, #f9f9f9 89px, #f9f9f9 100%);
+    background: linear-gradient(to top, #f9f9f9 88px, #ffffff 89px, #ffffff 100%);
 
     &--catalog,
     &--form {
-      background: linear-gradient(#ffffff 88px, #f1f1f1 89px, #f1f1f1 100%);
+      background: linear-gradient(to top, #f1f1f1 88px, #ffffff 89px, #ffffff 100%);
     }
   }
 }
